@@ -1,0 +1,8 @@
+import pyautogui
+import time
+
+time.sleep(3)
+
+pyautogui.position() #vc roda essa função,por isso nao precisa colocar os parametros, que vêm da GUI.
+
+#AUTOMATIZAR PARA RECEBER ALERTA COM A SOLUÇÃO DA POSIÇÃO PRA COPIAR E COLAR NA CELULA DE CIMA.
