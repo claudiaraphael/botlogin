@@ -1,0 +1,28 @@
+import pyautogui
+import time
+
+pyautogui.PAUSE = 2 #demora 2s entre cada linha de código rodando antes de passar pra outra.
+
+#abrir sistema - excel (interface) - pensar em termos de GUI
+pyautogui.press('win')
+pyautogui.write('login.xlsx')
+pyautogui.press('backspace') #macete pra encontrar o arquivo
+pyautogui.press('enter')
+
+time.sleep(5)
+
+#preencher login
+pyautogui.click(x = 527, y = 238)
+pyautogui.write('Itachi')
+
+time.sleep(1.5)
+
+#preencher senha
+pyautogui.click(x = 533, y=290)
+pyautogui.write("senha")
+
+time.sleep(1.5)
+
+#clicar em fazer login
+
+pyautogui.click(x=551, y=444)
